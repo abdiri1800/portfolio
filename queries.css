@@ -358,7 +358,12 @@
     }
     .screen-image{
     
-        padding: 0.8rem 2.8rem;
+        padding: 0.8rem 4rem;
+    }
+    .progress-bar img{
+        width: 1.5rem;
+        opacity: 1;
+        mix-blend-mode: color-burn;
     }
     .person-image1{
         display: flex;
