@@ -44,13 +44,14 @@
     .block{
         display: grid;
         grid-template-columns: 1fr;
-        
-        gap: 0.5rem;
-        padding: 2.2rem;
+        width: 100%;
+        gap: 0.4rem;
+        padding: 2rem;
     }
     .image-box {
         width: 100%;
-        height: 30%;
+        height: 90%;
+        object-fit: cover;
     }
     .image{
         width: 100%;
@@ -61,7 +62,7 @@
         grid-template-columns:1fr;
         gap: 0.1rem;
         justify-items: center;
-        padding:  0rem 2.2rem;
+        padding:  1rem 2rem;
         align-items: center;
        
         
@@ -81,10 +82,16 @@
         cursor: pointer;
         font-size: 0.8rem;
     }
+    .div-img img{
+        height: 5rem;
+        width: 100%;
+        height: 100%;
+    }
     .div-img{
         padding: 0.7rem;
         opacity: 0.7;
-        width: 55%;
+        width: 5rem;
+        height: auto;
     }
     .about-section{
         background-color: lightblue;
@@ -92,7 +99,13 @@
         grid-template-columns: 1fr;
         gap: 0.5rem;
         /* height: auto; */
-        padding: 2.2rem;
+        padding: 2rem;
+    }
+    .about-section-split{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        gap: 0.2rem;
+        width: 80%;
     }
     .text-p p{
         font-size: 1rem;
@@ -101,14 +114,14 @@
     }
     .skills{
         margin-top: 1.5rem;
-        padding: 0rem 2.2rem;
+        padding: 0rem 2rem;
         font-weight: 600;
         
     }
     .expertise{
         font-weight: 800;
         font-size: 2rem;
-        padding: 1.5rem 2.2rem;
+        padding: 1.5rem 2rem;
         
     }
     .awards{
@@ -116,7 +129,7 @@
         grid-template-columns: 1fr;
         gap: 1rem;
         margin-bottom: 1.5rem;
-        padding: 2.2rem;
+        padding: 2rem;
     }
     .dev-image img{
         width: 100%;
@@ -168,7 +181,8 @@
         box-shadow: 0px 9px 3px gray;
         border-radius: 1rem;
         background-color: blue;
-        width: 15rem;
+        width: 100%;
+        height: 100%;
         padding: 1rem;
         opacity: 0.8;
     }
@@ -192,7 +206,7 @@
         gap: 1rem;
     }
     .main-projects{
-        padding:  2.2rem;
+        padding:  2rem;
         display: flex;
         gap: 1rem;
         flex-direction: column;
@@ -229,16 +243,19 @@
         grid-template-columns: 1fr;
         /* justify-content: space-between; */
         gap: 1rem;
-        
-        padding: 1.5rem 2.2rem;
+        width: 100%;
+        padding: 1.5rem 2rem;
         float: left;
+    }
+    .slides-1{
+        width: 100%;
     }
     .footer2{
         display: flex;
         margin-bottom: 1rem;
         flex-direction: column;
         justify-content: space-between;
-        padding: 2.2rem;
+        padding: 2rem;
     }
     .send-message{
         cursor: pointer;
@@ -264,7 +281,7 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 1.5rem;
-        padding: 2.2rem;
+        padding: 2rem;
     }
     .image-11{
         width: 2rem;
@@ -317,7 +334,7 @@
         grid-template-columns: 1fr;
         gap: 1rem;
         width: 100%;
-        padding: 0rem 2.2rem;
+        padding: 0rem 2rem;
         background-color: rgb(160, 160, 240);
     }
     .behance-button{
@@ -371,6 +388,9 @@
         margin-bottom: 0.4rem;
         text-align: center;
     }
+    .navbar{
+        width: 100%;
+    }
     .web-p{
         font-size: 0.7rem;
         text-align: center;
@@ -382,7 +402,7 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 2rem;
-        padding: 0rem 2.2rem;
+        padding: 0rem 2rem;
     }
     .laptop-img{
         padding: 3rem;
@@ -430,7 +450,7 @@
     }
     .work-experience{
         display: grid;
-        padding: 2.2rem;
+        padding: 2rem;
         grid-template-columns: 1fr;
         gap: 2rem;
     }
@@ -462,7 +482,7 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 1.3rem;
-        padding: 2.2rem;
+        padding: 2rem;
     }
     .box1{
         position: relative;
@@ -500,6 +520,65 @@
         gap: 2rem;
         width: 20rem;
     }
+    /* MOBILE NAVIGATION */
+  /* .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.841);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    /* opacity: 0; */
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    /* pointer-events: none; */
+
+    /* 3) Hide it from screen readers */
+    /* visibility: hidden;
+  }
+
+  .nav-open .nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav .nav-bar {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  .nav .nav-bar p {
+    font-weight: 700;
+  } */
     /* .slides{
         display: grid;
         grid-template-columns: repeat(3, 1fr);

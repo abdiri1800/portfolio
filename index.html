@@ -7,55 +7,100 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="queries.css">
+   
+    
+    <!-- <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script> -->
+    <!-- <script defer src="script.js"></script> -->
 </head>
 <body>
-    <header class="head">
+    <nav class="navbar">
+        <div class="brand-title"><img src="logo.jpeg" alt="logo" class="logo"></div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about-me" style="text-decoration: none; font-size: 0.8rem;">About</a></li>
+            <li><a href="#contact" style="text-decoration: none; font-size: 0.8rem;">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    <!-- <nav class="navbar">
         <img src="logo.jpeg" alt="logo" class="logo">
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#" style=" color: black; font-size: 0.8rem;">Home</a></li>
+            <li><a href="#about-me" style="text-decoration: none; color: black; font-size: 0.8rem;">About</a></li>
+            <li><a href="#contact"  style="text-decoration: none; color: black; font-size: 0.8rem;">Contact</a></li>
+          </ul>
+        </div>
+      </nav> -->
+    <!-- <header class="head">
+        <img src="logo.jpeg" alt="logo" class="logo">
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
         <div class="nav">
             <p class="nav-bar">Home</p>
             <p class="nav-bar">Portfolio</p>
             <p class="nav-bar">Testimonials</p>
-            <p class="nav-bar">About</p>
+            <p class="nav-bar"><a href="#about-me" style="text-decoration: none; color: black;">About</a></p>
         </div>
-        <button class="contact">contact me</button>
-    </header>
+        <button class="contact"><p class="p-button"><a href="#contact" style="text-decoration: none; color: white;">Contact me</a></p></button>
+        
+    </header> -->
     <section class="hero">
         <div class="block">
             <div class="details">
-                <p class="hey">Hey, i am Fakher</p>
+                <p class="hey" id="home">Hey, i am Hussein</p>
                 <p class="create">I create <span class="span">Product design</span> and brand experience</p>
-                <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Vitae consequatur veniam corrupti id temporibus expedita delectus, 
-                    magnam ducimus nisi,
+                <p class="lorem">I am a frontend developer and Designer. with the required skills to transform your 
+                    your ideas to a final product. i am a team player with Management skills, i also possess leadership skills 
+                    which is crucial and needed in this field. 
                 </p>
                 <div class="buttons">
-                    <div class="hires-me">Hire Me</div>
-                    <div class="see">See Portfolio</div>
+                    <div class="hires-me"><p>Hire Me</p></div>
+                    <div class="see"><p>See Portfolio</p></div>
                 </div>
             </div>
             <div class="image-box">
-                <img src="man6.jpeg" alt="man6" class="image">
+                <img src="me2.jpeg" alt="man6" class="image">
             </div>
         </div>
     </section>
     <div class="labels">
-        <div class="div-img"><img src="dribble.jpeg" alt="dribble"></div>
-        <div class="div-img"><img src="linkedin.jpeg" alt="linkedin"></div>
-        <div class="div-img"><img src="medium.jpeg" alt="medium"></div>
-        <div class="div-img"><img src="behance.jpeg" alt="behance"></div>
+        <div class="div-img"><a href="mailto:hussein_abdirizak@yahoo.com" target="_blank" style="text-decoration: none; object-fit: cover; mix-blend-mode: color-burn;"><img src="yahoo.jpeg" alt="yahoo"></a></div>
+        <div class="div-img"><a href="https://www.linkedin.com/in/abdirisak-hussein-b739b3216/" target="_blank" style="text-decoration: none;"><img src="linked.jpeg" alt="linkedin"></a></div>
+        <div class="div-img"><a href="https://www.linkedin.com/in/abdirisak-hussein-b739b3216/" target="_blank" style="text-decoration: none;"><img src="insa.jpeg" alt="medium"></a></div>
+        <div class="div-img"><a href="https://www.linkedin.com/in/abdirisak-hussein-b739b3216/" target="_blank" style="text-decoration: none;"><img src="github.jfif" alt="behance"></a></div>
     </div>
-    <div class="about-section">
+    <div class="about-section" id="about-me">
         <div class="about-section-split">
             <div>
                 <p class="about-text">About Me.</p>
             </div>
-            <div>
-                <p class="lorem1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Enim ut maxime fugiat suscipit illum nobis exercitationem
-                     doloribus rerum in? Quos quis nesciunt laudantium rerum 
-                     quas assumenda.Quos molestiae dolorum officiis?illum vero! Pariatur nesciunt 
-                     cumque quasi aut praesentium esse vero accusantium, vel nam suscipit,
-                      porro nisi temporibus, corporis similique deleniti placeat?</p>
+            <div class="text-statement">
+                <p class="lorem4">I am a skillwd web developer with leadership skills which makes me the better choice for the
+                    potential client. I am a self taught developer with numbers of projects on my belt.
+                    I am also a team player who can comfortably work with a team of developers and come up with a friendly and working products.
+                </p>
                      
             </div>
         </div>
@@ -65,7 +110,7 @@
                 <div class="rest-boxes">
                     <div class="inner-about">
                         <div class="box1">
-                            <div class="text-box">3K</div>
+                            <div class="text-box">5</div>
                         </div>
                         <div class="text-p">
                             <p class="client">Projects Done</p>
@@ -74,7 +119,7 @@
                     </div>
                     <div class="inner-about">
                         <div class="box1">
-                            <div class="text-box">1K</div>
+                            <div class="text-box">5</div>
                         </div>
                         <div class="text-p">
                             <p class="client">Happy Clients</p>
@@ -82,10 +127,10 @@
                     </div>
                     <div class="inner-about">
                         <div class="box1">
-                            <div class="text-box">1K</div>
+                            <div class="text-box">6</div>
                         </div>
                         <div class="text-p">
-                            <p class="client">Clients on the Worldwide</p>
+                            <p class="client">Team work Done</p>
                         </div>
                     </div>
                     
@@ -100,36 +145,36 @@
         <div class="strategy">
             <img src="strategy.jpeg" alt="strategy" class="image-skills">
             <p class="strategy-d">Strategy & Direction</p>
-            <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum sit accusamus similique eligendi,
-                 possimus molestias. Porro eius suscipit facilis.
-                 Beatae cupiditate cum eius dignissimos aperiam fuga vitae quia illum eos.</p>
+            <p class="para">This is the crucial phase of project. strategy and direction must be outlined propely to ensure smooth
+                run of the project. I posses the skills and expertise of laying down strategy which is important for the successfulness of a project
+                 </p>
         </div>
         <div class="strategy">
             <img src="ui.jpeg" alt="strategy" class="image-skills">
             <p class="strategy-d">UI & UX Design</p>
             <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum sit accusamus similique eligendi,
                  possimus molestias. Porro eius suscipit facilis.
-                 Beatae cupiditate cum eius dignissimos aperiam fuga vitae quia illum eos.</p>
+                 </p>
         </div>
         <div class="strategy">
             <img src="branding.jpeg" alt="strategy" class="image-skills">
             <p class="strategy-d">Branding & Logo</p>
             <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum sit accusamus similique eligendi,
                  possimus molestias. Porro eius suscipit facilis.
-                 Beatae cupiditate cum eius dignissimos aperiam fuga vitae quia illum eos.</p>
+                 </p>
         </div>
         <div class="strategy">
             <img src="web.jpeg" alt="strategy" class="image-skills">
             <p class="strategy-d">Webflow development</p>
             <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum sit accusamus similique eligendi,
                  possimus molestias. Porro eius suscipit facilis.
-                 Beatae cupiditate cum eius dignissimos aperiam fuga vitae quia illum eos.</p>
+                 </p>
         </div>
     </div>
     <div class="awards">
         
             <div class="dev-image">
-                <img src="man5.jpeg" alt="man">
+                <img src="me.jpeg" alt="man">
             </div>
         
         <div class="awards-detail">
@@ -153,14 +198,14 @@
     <div class="work-experience">
         <div class="work-exp">
             <p class="work-exp1">WORK EXPERIENCE</p>
-            <p class="director">Creative Director</p>
-            <p class="arena">at Design Arena</p>
-            <p class="year">2015 - Present</p>
+            <p class="director">IT Support</p>
+            <p class="arena">at KEMRI</p>
+            <p class="year">2021 - 2022</p>
             
                 
-                <p class="director">Senior UI/UX Designer</p>
-                <p class="arena">at Design Arena</p>
-                <p class="year">2013 - 2015</p>
+                <p class="director">TECH Support</p>
+                <p class="arena">at Qzone Company</p>
+                <p class="year">2020 - 2021</p>
 
                 <div class="work-exp">
                     
@@ -202,9 +247,9 @@
                 <div class="mark">
                     <div class="reached3"></div>
                 </div>
-                <div class="laptop-img">
+                <!-- <div class="laptop-img">
                     <img src="laptop.jpeg" alt="laptop" class="laptop-image">
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -215,7 +260,7 @@
                     <img src="screen.jpeg" alt="screen">
                 </div>
                 <p class="web-design">Web Design</p>
-                <p class="web-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quas facilis id,
+                <p class="web-p">Efficient in web design, building interactive and friendly User Interface.
                      </p>
             </div>
             <div class="blue-box">
@@ -223,7 +268,7 @@
                     <img src="painter.jpeg" alt="screen">
                 </div>
                 <p class="web-design">UI/UX Design</p>
-                <p class="web-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quas facilis id,
+                <p class="web-p">Design interactive User Interface and match the client Objectives.
                      </p>
             </div>
         </div>
@@ -231,15 +276,18 @@
             <div class="text-text">
                 <p class="text-text1">What I Can Do To Help Build your Product</p>
                 <p class="text-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Accusamus, dolore deserunt! Tenetur fuga at aperiam cupiditate?</p>
+                    Accusamus, dolore deserunt! Tenetur fuga at aperiam cupiditate?
+                    nobis ipsum iusto facere architecto esse molestiae, id earum aspernatur amet maiores 
+                    iure eum explicabo voluptatem libero similique eius, fuga placeat</p>
+                    
             </div>
             <div class="person-image">
                 <div class="person-image1">
-                    <img src="designer.jpeg" alt="designer">
+                    <img src="me2.jpeg" alt="designer">
                     <div class="designer-text">
-                        <p class="fakher">Fakher Uddin</p>
+                        <p class="fakher">Abdirisak Hussein</p>
                 
-                    <p class="fakher-designer">Web Design</p>
+                    <p class="fakher-designer">Web Developer</p>
                     </div>
                     
                 </div>
@@ -251,7 +299,7 @@
             <p class="recent-projects">Recent Projects</p>
             <p class="recent-portfolios">My Portfolio</p>
         </div>
-        <div class="behance-button"> <p class="visit">visit my behance</p></div>
+        <div class="behance-button"> <a href="https://github.com/abdiri1800" target="_blank" style="text-decoration: none;"><p class="visit">visit my Github</p></a></div>
     </div>
     <div class="slides">
         <div class="slides-1">
@@ -260,7 +308,7 @@
                 <p class="real-estate">Real Estate</p>
                 <p class="slides-1-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                     Accusantium minus, pariatur et quia magni, 
-                    voluptate veniam soluta aliquid neque eos magnam.</p>
+                    </p>
                     <div class="link-direct">
                         <p>View in Behance</p>
                         <p>>>></p>
@@ -274,7 +322,7 @@
                 <p class="real-estate">Dashboard</p>
             <p class="slides-1-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                 Accusantium minus, pariatur et quia magni, 
-                voluptate veniam soluta aliquid neque eos magnam.</p>
+                </p>
                 <div class="link-direct">
                     <p>View in Behance</p>
                     <p>>>></p>
@@ -283,14 +331,14 @@
             
         </div>
         <div class="slides-1" style="box-shadow: 2px 2px 2px gray;">
-            <img src="rent.jpeg" alt="home" class="rent">
+            <img src="calories.jpeg" alt="home" class="rent">
             <div class="push">
-                <p class="real-estate">Easy Rent</p>
-            <p class="slides-1-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Accusantium minus, pariatur et quia magni, 
-                voluptate veniam soluta aliquid neque eos magnam.</p>
+                <p class="real-estate">Password Generator</p>
+            <p class="slides-1-p">This is a piece of software that can be able to generate ones password and increase ones security
+                reducing risk of being exploited online.
+                </p>
                 <div class="link-direct">
-                    <p>View in Behance</p>
+                    <p><a href="https://github.com/abdiri1800/calories-conversion/blob/main/password%20generator.py" target="_blank" style="text-decoration: none; color: black;">View in Behance</a></p>
                     <p>>>></p>
                 </div>
             </div>
@@ -325,17 +373,17 @@
         </div>
         <div class="prose">
             <p class="work-together">Lets Work Together</p>
-            <p class="togerther-lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid perspiciatis 
-                error libero ea sint nihil veritatis ipsum reiciendis, earum,
-                 voluptatum beatae recusandae voluptatibus, et ab iure culpa quod enim minus.</p>
-                 <button class="hire-me">HIRE ME</button>
+            <p class="togerther-lorem">With the experience team i have on my side we can be able to come up with a product that is aspired by your ideas.
+                we can be able to connect to you and come up with a product that fulfils your requirement.
+            </p>
+            <a href="mailto:hussein_abdirizak@yahoo.com" target="_blank" style="text-decoration: none;"><button class="hire-me"><p>HIRE ME</p></button></a>
         </div>
     </div>
     <div class="form-place">
-        <div class="info">
+        <div class="info" id="contact">
             <img src="logo.jpeg" alt="logo" class="footer-logo">
-            <p class="f-name">Fakher Uddin</p>
-            <p class="designer-name">UX/UI DESIGNER</p>
+            <p class="f-name">Abdirisak Hussein</p>
+            <p class="designer-name">WEB DEVELOPER</p>
             <div class="icons">
                 <img src="linkedin-circled.jpeg" alt="linkedin">
                 <img src="facebook-new.jpeg" alt="facebook">
@@ -343,22 +391,22 @@
                 <img src="ig.jpeg" alt="ig">
             </div>
             <p class="personal">My personal contact</p>
-            <p class="phone-no">+92 355 596 644 9</p>
+            <p class="phone-no">+254 718 367 758</p>
             <p class="say-hello">Say hello, on Skype</p>
-            <p class="channel">Live:fakherhunzai</p>
+            <p class="channel">Live:husseinabdullahi</p>
         </div>
         <div class="form">
            <div class="press">
             <p class="form-contact">Contact Me.</p>
            </div>
            <div style="padding: 2rem;">
-            <P style="opacity: 0.7;  font-size: 0.7rem; margin-bottom: 2rem; width: 18rem;">What is your Name? *</P>
+            <P style="opacity: 0.7;  font-size: 0.6rem; margin-bottom: 1rem; width: 15rem;">What is your Name? *</P>
             <div class="line-answer"></div>
             <p class="email-answer">What is your email? *</p>
             <div class="line-answer"></div>
             <p class="textarea">Write your message here*</p>
             <div class="line-answer"></div>
-            <button class="send-message">Send Message</button>
+            <button class="send-message"><p>Send Message</p></button>
            </div>
         </div>
     </div>
@@ -369,25 +417,26 @@
                 <p class="design-arena">Design Arena</p>
             </div>
             <div class="footer-nav">
-                <p>Home</p>
+                <p><a href="#home" style="text-decoration: none; color: black;">Home</a></p>
                 <p>Portfolio</p>
                 <p>Testimonial</p>
-                <p>About Me</p>
+                <a href="#about-me" style="text-decoration: none; color: black;">About Me</a><p></p>
                 <p>Contact</p>
             </div>
             <div class="icons2">
-                <img src="facebook-new.jpeg" alt="facebook">
+                <a href="https://www.facebook.com/abdirizak.hussein.161" target="_blank" style="text-decoration: none;"><img src="facebook-new.jpeg" alt="facebook"></a> 
                 <img src="ig.jpeg" alt="ig">
-                <img src="twitter.jpeg" alt="twitter">
-                <img src="linkedin-circled.jpeg" alt="linkedin">
+                <a href="https://twitter.com/hussein_huss13" target="_blank" style="text-decoration: none;"><img src="twitter.jpeg" alt="twitter"></a>
+                <a href="https://www.linkedin.com/in/abdirisak-hussein-b739b3216/" target="_blank" style="text-decoration: none;"><img src="linkedin-circled.jpeg" alt="linkedin"></a>
             </div>
         </div>
-        <div style="background-color: black; width: 100%; height: 0.1rem; margin-bottom: 2rem;"></div>
+        <div style="background-color: black; width: 95%; height: 0.1rem; margin-bottom: 2rem;"></div>
         <div class="footer3">
             <p>Privacy Policy</p>
             <p>Terms of Service</p>
             <p>Cookies Settings</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
